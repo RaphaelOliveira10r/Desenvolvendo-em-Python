@@ -1,4 +1,4 @@
-# Funções decoradoras 
+# Funções 
 
 
 def saudacao(saudar):

@@ -1,4 +1,4 @@
-# Funções decoradoras
+# Funções 
 
 
 def equacao_1_grau(x,y,z):
