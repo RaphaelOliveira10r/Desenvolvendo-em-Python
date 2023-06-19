@@ -21,6 +21,10 @@ class Notebook:
         self.__desligado = True
         print(f"{self.__nome} está desligado")
 
+    def reiniciar(self):
+        print(f'{self.__nome} está reiniciando')
+
+
 
 note1 = Notebook('Dell')
 
@@ -34,4 +38,5 @@ note1.ligar()
 note1.ligar()
 note1.desligar()
 note1.desligar()
+note1.reiniciar()
 
