@@ -1,12 +1,31 @@
-class Cidade:
-    def __init__(self,nome,estado,regiao):
-        self.nome = nome
-        self.estado = estado
-        self.regiao = regiao
+# Treinamento de class
+
+class Pessoa:
+    def __init__(self,nome,idade,cidade):
+        self.__nome = nome
+        self.__idade = idade
+        self.__cidade = cidade
+
+    def __str__(self):
+        return self.__cidade
+    
+    def get_idade(self):
+        print(f"{self.__nome} tem {self.__idade} de idade.")
+        
 
     def get_nome(self):
-        return self.nome
-    
+        return self.__nome
 
-city1 = Cidade('Recanto das Emas','DF','Centro-Oeste')
-print(city1.get_nome())
+    def set_nome(self,novo):
+        self.__nome = novo
+        print(f"O nome foi alterado para {novo}")
+
+
+eu = Pessoa('Ralph',24,'Brasília')
+
+print(eu.get_nome())
+eu.set_nome('Raphael')
+
+
+
+
