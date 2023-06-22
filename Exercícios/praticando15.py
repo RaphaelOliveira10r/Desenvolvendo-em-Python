@@ -25,6 +25,10 @@ class Notebook:
         print(f'{self.__nome} está reiniciando')
 
 
+    def suspender(self):
+        print(f"{self.__nome} está suspenso")
+
+
 
 note1 = Notebook('Dell')
 
@@ -39,4 +43,4 @@ note1.ligar()
 note1.desligar()
 note1.desligar()
 note1.reiniciar()
-
+note1.suspender()
