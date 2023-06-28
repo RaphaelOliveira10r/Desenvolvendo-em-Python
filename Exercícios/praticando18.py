@@ -4,8 +4,21 @@
 
 import statistics
 
-notas = [10, 8 , 7 , 5]
+notas = []
+nota = 0
+while True:
+    nota = float(input('Digite as notas:'))
+    notas.append(nota)
+    if nota == 0:
+        
+        break
 
-media = statistics.mean(notas)
+notas.pop()
 
-print(f' Média das notas: {media} ')
+def estatistica_notas(lista):
+    media = statistics.mean(lista)
+    print(f'Média de todas as notas : {media}')
+    return media
+
+estatistica_notas(lista=notas)
+print(f'Notas : {notas}')
