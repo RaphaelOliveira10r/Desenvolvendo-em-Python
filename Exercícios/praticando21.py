@@ -14,7 +14,7 @@ lista.append(primeira)
 lista.append(segunda)
 
 media = statistics.mean(lista)
-#7media = sum(lista) / 2
+
 
 
 

@@ -29,5 +29,3 @@ class GarrafaJarra(Garrafa):
     def get_garrafa(self,liquido):
         print(f'a garrafa contém {liquido} dentro.')
 
-class GarrafaAgua(Garrafa):
-    ...

@@ -10,4 +10,4 @@ def peso_ideal(altura=float):
     peso = (72.7 * altura) - 58
     return f"Seu peso ideal é: {peso}"
 
-print(peso_ideal(altura=1.85))
+print(peso_ideal(altura=1.85),2)

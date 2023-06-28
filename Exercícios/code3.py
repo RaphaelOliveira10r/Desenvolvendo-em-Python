@@ -25,3 +25,4 @@ produtos =[
 
 with open('arquivo.json','w',encoding='utf8') as arquivo:
         json.dump(produtos,arquivo,ensure_ascii=False,indent=2)
+
