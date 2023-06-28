@@ -1,6 +1,6 @@
 # função round
 
-numero = 45.9872
+numero = 45.1324
 
 
 round = round(numero,3)
