@@ -1,3 +1,5 @@
-string = 'Hello, World!'
+def mapear_string(string):
+    return string[:2:]
 
-print(string[7:])
+string = mapear_string(string='Raphael Developer')
+print(string)

@@ -1,10 +1,11 @@
 
-def calcular_imposto(preco,taxa):
-    imposto = preco * taxa
-    print(preco,taxa)
+def calcular_imposto(preco,taxa,outro_valor=None):
+    imposto = preco * taxa 
+    print(preco,taxa,outro_valor)
     return imposto
-imposto = calcular_imposto(taxa=0.2,preco=1500)
-print(imposto)
+
+print(__name__)
 
 
-
+if __name__ == "__main__":
+    print(calcular_imposto(1000,0.2))

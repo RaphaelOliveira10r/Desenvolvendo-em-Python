@@ -1,7 +1,7 @@
 # função round
 
-numero = 45.1324
 
+def f_round(number):
+    return round(number,2)
 
-round = round(numero,3)
-print(round)
+print(f_round(number=45.600))
