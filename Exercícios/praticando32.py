@@ -1,14 +1,17 @@
 # Criando a classe OnePuchMan
 
 class OnePuchMan:
-    def __init__(self,personagem,forca,classe):
+    def __init__(self,personagem,forca,classe,organizacao):
         self.__personagem = personagem
         self.__forca = forca
         self.__classe = classe
+        self.__organizacao = organizacao
 
     def get_personagem(self):
         return self.__personagem
     
+    def organizacao(self):
+        return self.__organizacao
 
     def get_forca(self):
         return f'a força do {self.__personagem} é {self.__forca}'
@@ -19,30 +22,52 @@ class OnePuchMan:
 
 class Heroi(OnePuchMan):
     tipo_personagem = 'Heroi'
-    def __init__(self, personagem, forca, classe):
-        super().__init__(personagem, forca, classe)
+    def __init__(self, personagem, forca, classe,organizacao):
+        super().__init__(personagem, forca, classe,organizacao)
 
+    def organizacao(self):
+        return self.__organizacao
+    
     def lutar(self,personagem):
         print(f'{personagem} está lutando..!')
 
 
-saitama = Heroi('Saitama','Infinita','C')
+saitama = Heroi('Saitama','Infinita','C','Associação de Herois')
 print(saitama.get_forca())
 print(saitama.get_personagem())
 saitama.set_classe('B')
 saitama.lutar('Saitama')
+print(saitama.organizacao())
+
 
 class Vilao(OnePuchMan):
     tipo_personagem = 'Vilão'
-    def __init__(self, personagem, forca, classe):
-        super().__init__(personagem, forca, classe)
+    def __init__(self, personagem, forca, classe,organizacao):
+        super().__init__(personagem, forca, classe,organizacao)
 
     def lutar(self,personagem):
         print(f'{personagem} está lutando..!')
 
+    def organizacao(self):
+        return self.__organizacao
+
 print()
-garou = Vilao('Garou','Nivel God','S')
+garou = Vilao('Garou','Nivel God','S','Solitário')
 print(garou.get_personagem())
 print(garou.get_forca())
 garou.set_classe('Infinity')
 garou.lutar('Garou')
+print(garou.organizacao())
+
+
+
+class Mostro(OnePuchMan):
+    def __init__(self, personagem, forca, classe,organizacao):
+        super().__init__(personagem, forca, classe,organizacao)
+
+
+    def lutar(self,personagem):
+        print(f'{personagem} está lutando..!')
+
+    def organizacao(self):
+        return self.__organizacao
