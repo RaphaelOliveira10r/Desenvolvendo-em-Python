@@ -25,9 +25,7 @@ class Heroi(OnePuchMan):
     def __init__(self, personagem, forca, classe,organizacao):
         super().__init__(personagem, forca, classe,organizacao)
 
-    def organizacao(self):
-        return self.__organizacao
-    
+
     def lutar(self,personagem):
         print(f'{personagem} está lutando..!')
 
@@ -48,20 +46,9 @@ class Vilao(OnePuchMan):
     def lutar(self,personagem):
         print(f'{personagem} está lutando..!')
 
-    def organizacao(self):
-        return self.__organizacao
-
-print()
-garou = Vilao('Garou','Nivel God','S','Solitário')
-print(garou.get_personagem())
-print(garou.get_forca())
-garou.set_classe('Infinity')
-garou.lutar('Garou')
-print(garou.organizacao())
 
 
-
-class Mostro(OnePuchMan):
+class Monstro(OnePuchMan):
     def __init__(self, personagem, forca, classe,organizacao):
         super().__init__(personagem, forca, classe,organizacao)
 
@@ -69,5 +56,4 @@ class Mostro(OnePuchMan):
     def lutar(self,personagem):
         print(f'{personagem} está lutando..!')
 
-    def organizacao(self):
-        return self.__organizacao
+  
