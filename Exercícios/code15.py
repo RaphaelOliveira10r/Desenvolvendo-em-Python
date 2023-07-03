@@ -54,3 +54,6 @@ pinguim = Pinguim("Pinguim")
 print(pinguim.cumprimentar())
 print(pinguim.nadar())
 print(pinguim.andar())
+
+
+print(help(Pinguim)) #ao dar um help na classe Pinguim, irá imprimiir a ordem de execução
