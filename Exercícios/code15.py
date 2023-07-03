@@ -1,20 +1,28 @@
 class Animal:
     def __init__(self,nome):
-        self._nome = nome
+        self.__nome = nome
+
+
+    def get_nome(self):
+        return self.__nome
+
 
     def cumprimentar(self):
-        return f'Eu sou {self._nome}'
+        return f'Eu sou {self.__nome}'
     
+
+
+
 
 class Terrestre(Animal):
     def __init__(self, nome):
         super().__init__(nome)
     
     def andar(self):
-        return f'{self._nome} andando'
+        return f'{super().get_nome()} andando'
     
     def cumprimentar(self):
-        return f'sou {self._nome} da terra'
+        return f'sou {super().get_nome()} da terra'
 
 
 class Aquatico(Animal):
@@ -22,10 +30,10 @@ class Aquatico(Animal):
         super().__init__(nome)
 
     def nadar(self):
-        return f'{self._nome} nadando' 
+        return f'{super().get_nome()} nadando' 
 
     def cumprimentar(self):
-        return f'sou {self._nome} da água' 
+        return f'sou {super().get_nome()} da água' 
 
 alex = Terrestre("Leão alex")
 print(alex.andar())
