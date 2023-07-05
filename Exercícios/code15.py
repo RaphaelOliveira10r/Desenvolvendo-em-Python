@@ -56,4 +56,4 @@ print(pinguim.nadar())
 print(pinguim.andar())
 
 
-print(help(Pinguim)) #ao dar um help na classe Pinguim, irá imprimiir a ordem de execução
+print(help(Pinguim)) #ao dar um help na classe Pinguim, irá imprimir a ordem de execução
