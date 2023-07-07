@@ -6,3 +6,6 @@ que é o custo de um item antes do imposto.
  A função “altera” o valor de custo para incluir o imposto sobre vendas.
 
 """
+
+def soma_imposto(x,y):
+    pass
