@@ -13,5 +13,9 @@ def soma_imposto(valor,imposto):
     com_imposto = (valor * imposto) / 100 + valor
     return f'valor do item com imposto {com_imposto}'
 
-inss = soma_imposto(1000,12)                
+inss = soma_imposto(valor=1000,imposto=8)                
 print(inss)
+print()
+
+preco_do_arroz = soma_imposto(imposto=25.5,valor=10)
+print(preco_do_arroz)
