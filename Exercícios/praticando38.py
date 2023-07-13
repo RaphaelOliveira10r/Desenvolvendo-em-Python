@@ -40,3 +40,11 @@ print(ebr.get_pais())
 print(ebr.get_quantidade())
 print(ebr.get_navios())
 print(ebr.get_ranking())
+
+
+print('-----------------------------')
+eua = Aeronautica("Estados Unidos",1,350,"America do Norte",5000)
+print(eua.get_pais())
+print(eua.get_ranking())
+print(eua.get_quantidade())
+print(eua.get_avioes())
